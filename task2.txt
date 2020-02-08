@@ -1,0 +1,76 @@
+package newygift;
+
+import java.util.regex.*;
+import java.math.*;
+import java.text.*;
+import java.util.*;
+import java.io.*;
+
+public class gifts extends Chocolate
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Number of gifts:");
+        int n=sc.nextInt();
+        System.out.print("Name of the gift:");
+        String ch=sc.next();
+        System.out.print("How many:");
+        int t=sc.nextInt();
+        Chocolate b=new Chocolate();
+       
+        if(ch.equals("dairymilk"))
+        {
+            b.dairymilky(t);
+        }
+        else if(ch.equals("kitkat"))
+        {
+            b.kitkat(t);
+        }
+        else if(ch.equals("fivestar"))
+        {
+            b.fivestar(t);
+        }
+        else if(ch.equals("milkybar"))
+        {
+            b.milkybar(t);
+        }
+       
+    }
+}
+package newygift;
+
+public class Chocolate
+{
+int i;
+int j;
+    public void kitkat(int t)
+    {
+    i=t;
+        int n=2;
+        int k=n*i;
+        System.out.println("total weight"+k);
+    }
+    public void dairymilky(int t)
+    {
+    i=t;
+        int n=5;
+        int k=n*i;
+        System.out.print(+k);
+    }
+    public void fivestar(int t)
+    {
+    i=t;
+        int n=10;
+        int k=n*i;
+        System.out.println("total weight"+k);
+    }
+    public void milkybar(int t)
+    {
+    i=t;
+        int n=15;
+        int k=n*i;
+        System.out.println("total weight"+k);
+    }
+   
+}
